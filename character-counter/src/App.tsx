@@ -9,7 +9,7 @@ function App() {
     setUserText(newText)
   }
   const characterCount = userText.length
-  const wordCount = userText.trim() === '' ? 0: userText.trim().split('').length
+  const wordCount = userText.trim() === '' ? 0: userText.trim().split(' ').length
   const readingTime = Math.ceil(wordCount / 200)
   const stats = {characterCount, wordCount, readingTime}  
   return (

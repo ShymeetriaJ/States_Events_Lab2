@@ -15,9 +15,10 @@ export default function StatsDisplay({stats, showReadingTime}: StatsDisplayProps
         <>
         <div className="text-stats">
         <p className="character-count">Character Count: {stats.characterCount}</p>
-        <p className="word-count">Word Count: ={stats.wordCount}</p>
+        <p className="word-count">Word Count: {stats.wordCount}</p>
         {showReadingTime && <p> Reading Time: {stats.readingTime} minutes</p>}
         </div>
+
         </>
     )
 }
