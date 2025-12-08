@@ -3,16 +3,19 @@ export interface TextInputProps {
   placeholder?: string;
   initialValue?: string;
 }
-export default function TextInput({text, onChange}:
-    TextInputProps) {
+export default function TextInput({onTextChange, placeholder, initialValue}: TextInputProps) {
         const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
             const newText = event.target.value 
-            onChange(newText)
+            onTextChange(newText)
         }
           return (
         <>
-        <input type="text" onChange={handleInput}></input>
-        <p>{placeholder}</p>
+        <input type="text" 
+        onChange={handleInput}
+        placeholder={placeholder}
+        defaultValue={initialValue}
+        />
+        
         </>
     )
 }
