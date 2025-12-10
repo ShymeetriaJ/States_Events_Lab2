@@ -6,8 +6,8 @@ Lab 2: Props and State
 December 7, 2025
 
 # Lab Description: 
+ In this lab, I created an interactive character counter application that demonstrates state management and event handling in React. The application allows users to input text and see real-time statistics about their input, including character count, word count, and reading time. This lab focuses on state management, event handling, and component interaction using React hooks.
  
-
 # My reflection:
 
 # How did you handle state updates when the text changed?
